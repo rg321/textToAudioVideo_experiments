@@ -1,5 +1,8 @@
 import cv2
 import os
+import sys
+
+from create_mouths import create_allMouths
 
 """
 Phoneme Example Translation    Phoneme Example Translation
@@ -80,10 +83,20 @@ Z       blair_c_d_g_k_n_r_s_th_y_z.jpg
 """
 
 ## Importing all the mouth images
+# print('----------', sys.argv[1])
+try:    
+     arg1 = sys.argv[1]
+     base_name = arg1.split('.')[0] # Mouths_ + base_name will have all images
+except:
+     base_name = 'base'
+
+# create mouths corresponding to image if not present
+create_allMouths(base_name)
+
 mouths = {}
-for i in os.listdir("./Mouths"):
+for i in os.listdir("./Mouths_"+base_name):
     if i.endswith(".jpg"):
-        img = cv2.imread("./Mouths" + "/" + i, 0)
+        img = cv2.imread("./Mouths_"+base_name + "/" + i, 0)
         mouths["" + i] = img
         continue
 #print mouths

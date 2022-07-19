@@ -5,6 +5,7 @@ import phonemes
 import time
 import pyttsx3
 from threading import Thread
+import sys
 
 #Defines
 timePerPhoneme = 0.04
@@ -33,7 +34,7 @@ for token in tokens:
             break
 end_time = time.time()
 #Debug!
-print("Pre-processing Done! Time: %s Seconds"%(end_time - start_time))
+# print("Pre-processing Done! Time: %s Seconds"%(end_time - start_time))
 
 engine = pyttsx3.init()
 engine.setProperty('voice', 'english_rp+f3')

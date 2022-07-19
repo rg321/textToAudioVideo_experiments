@@ -11,6 +11,8 @@ nlpa = "bash -c \"python3 imageprototype.py 2> /dev/null\""
 opencv-python = "*"
 nltk = "*"
 pyttsx3 = "*"
+cmake = "*"
+dlib = "*"
 
 [dev-packages]
 

@@ -5,7 +5,9 @@ import time
 
 ## Importing all the mouth images
 mouths = {}
-for i in os.listdir("./Mouths"):
+# for i in os.listdir("./Mouths"):
+print('----------', sys.argv[1])
+for i in os.listdir("./Mouths_"):
     if i.endswith(".jpg"):
         img = cv2.imread("./Mouths" + "/" + i, 0)
         mouths["" + i] = img
