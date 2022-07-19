@@ -5,5 +5,5 @@
 4. Type the text you want to be animated in sample.txt
 5. To use predefined face image, run **python imageprototype.py** in the project root directory
 6. To use own face image, first download **shape_predictor_68_face_landmarks.dat** file using command **wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2** followed by **bzip2 -d shape_predictor_68_face_landmarks.dat.bz2**
-7. Then, run **python imageprototype.py <image_name>.jpg**
+7. Then, run **python imageprototype.py <image_name>.jpg**. for example, run **python imageprototype.py raghav.jpg**
 
