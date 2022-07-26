@@ -6,7 +6,7 @@ You have to upload two files -:
 	1) video file with extention like .mp4
 	2) audio file with extention like .wav
 
-Sample files are provided in this folder. You can see that audio is out of sync with video. Progam will sync them both.
+Sample files are provided in this folder. You can see that audio is out of sync with video. Program will sync them both.
 
 Once you click on submit, wait for few mintues for process to complete.
 
